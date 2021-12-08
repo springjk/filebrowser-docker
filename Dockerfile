@@ -11,6 +11,8 @@ RUN curl -fsSL https://filebrowser.xyz/get.sh | bash
 COPY config.json /.filebrowser.json
 COPY startup.sh /startup.sh
 
+RUN chmod a+x ./startup.sh
+
 EXPOSE 80
 
 CMD ["./startup.sh"]

@@ -5,7 +5,7 @@ RUN apk add curl npm bash
 RUN npm install -g pm2
 
 # Install filebrowser
-RUN curl -fsSL https://filebrowser.xyz/get.sh | bash
+RUN curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
 # Copy files/scripts
 COPY config.json /.filebrowser.json
